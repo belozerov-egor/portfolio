@@ -20,6 +20,7 @@ export const Skills = () => {
 };
 
 const SkillsBlock = styled.div`
+  padding-top: 30px;
   min-height: 100vh;
   background-color: violet;
   

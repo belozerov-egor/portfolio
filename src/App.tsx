@@ -4,6 +4,8 @@ import {Main} from "./component/main/Main.tsx";
 import {Skills} from "./component/skills/Skills.tsx";
 import {MyWorks} from "./component/work/myWorks.tsx";
 import {DistantWork} from "./component/distantWork/DistantWork.tsx";
+import {Contacts} from "./component/contacts/Contacts.tsx";
+import {Footer} from "./component/footer/Footer.tsx";
 
 
 function App() {
@@ -16,6 +18,8 @@ function App() {
             <Skills/>
             <MyWorks/>
             <DistantWork/>
+            <Contacts/>
+            <Footer/>
         </div>
     )
 }

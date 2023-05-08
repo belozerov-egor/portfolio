@@ -18,6 +18,7 @@ export const MyWorks = () => {
 };
 
 const MyWorksBlock = styled.div`
+  padding-top: 30px;
   min-height: 100vh;
   background-color: red;
 

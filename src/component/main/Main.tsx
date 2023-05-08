@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const Main = () => {
     return (
         <MainBlock>
-            <ContainerBlock>
+            <ContainerBlock className={'contentBlock'}>
                 <div className={'text'}>
                     <span>Hi there</span>
                     <h1>I am Egor Belozerov</h1>
@@ -20,6 +20,9 @@ export const Main = () => {
 
 
 const MainBlock = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-height: 100vh;
   background-color: #e05b2c;
   
@@ -32,6 +35,9 @@ const MainBlock = styled.div`
     width: 300px;
     height: 400px;
     background-color: lightgreen;
+  }
+  .contentBlock{
+    padding: 0 50px;
   }
   
 `

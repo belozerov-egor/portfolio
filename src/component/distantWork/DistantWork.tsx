@@ -4,16 +4,19 @@ import {ContainerBlock} from "../main/Main.tsx";
 
 export const DistantWork = () => {
     return (
-        <MyWorksBlock>
+        <DistantWorkBlock>
             <ContainerBlock className={'blockContainer'}>
-                <h2>Рассматриваю варианты удаленной работы </h2>
+                <h2>РАССМАТРИВАЮ ВАРИАНТЫ УДАЛЕННЫЙ РАБОТЫ </h2>
                     <button>НАНЯТЬ МЕНЯ</button>
             </ContainerBlock>
-        </MyWorksBlock>
+        </DistantWorkBlock>
     );
 };
 
-const MyWorksBlock = styled.div`
+const DistantWorkBlock = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-height: 250px;
   background-color: cornflowerblue;
 
