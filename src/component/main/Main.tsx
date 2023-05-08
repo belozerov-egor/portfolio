@@ -20,7 +20,7 @@ export const Main = () => {
 
 
 const MainBlock = styled.div`
-  height: 100vh;
+  min-height: 100vh;
   background-color: #e05b2c;
   
   .text {
