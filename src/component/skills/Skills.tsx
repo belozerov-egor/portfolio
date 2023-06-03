@@ -13,19 +13,19 @@ export const Skills = () => {
                 <div className={'skills'}>
 
                     <Skill img={imgSkills.jsIcon} title={'JS'}
-                           description={'jdsfjsdfjsdjkfs djfhwefwefbhrbfherfbherf'}/>
+                           description={'jdsfjsdfjsdjkfs djfhwefwefbh rbfherfbherf'}/>
                     <Skill img={imgSkills.tsIcon} title={'TYPESCRIPT'}
-                           description={'jdsfjsdfjsdjkf sdjfhwefwefbhrbfherfbherf'}/>
+                           description={'jdsfjsdfjsdjkf sdjfhwefwefb hrbfherfbherf'}/>
                     <Skill img={imgSkills.reactIcon} title={'REACT'}
-                           description={'jdsfjsdfjsdjkf sdjfhwefwefbhrbfherfbherf'}/>
+                           description={'jdsfjsdfjsdjkf sdjfhwefwef bhrbfherfbherf'}/>
                     <Skill img={imgSkills.reduxIcon} title={'REDUX & TOOLKIT'}
-                           description={'jdsfjsdfjsdjkf sdjfhwefwefbhrbfherfbherf'}/>
+                           description={'jdsfjsdfjsdjkf sdjfhwefwefbhrb fherfbherf'}/>
                     <Skill img={imgSkills.mobX} title={'MOBX'}
-                           description={'jdsfjsdfjsdjkf sdjfhwefwefbhrbfherfbherf'}/>
+                           description={'jdsfjsdfjsdjkf sdjfhwefwefb hrbfherfbherf'}/>
                     <Skill img={imgSkills.htmlIcon} title={'HTML'}
-                           description={"asdasdas dasdasdasdasdasdasdasdasdasdasdasd "}/>
+                           description={"asdasdas dasdasdasdasdasdasd asdasdasdasdasd "}/>
                     <Skill img={imgSkills.cssIcon} title={'CSS'}
-                           description={"asdasdas dasdasdasdasdasdasdasdasdasdasdasd "}/>
+                           description={"asdasdas dasdasdasdasdasda sdasdasdasdasdasd "}/>
                     <Skill img={imgSkills.postman} title={'POSTMAN'}
                            description={'jdsfjsdfjsdjkf sdjfhwefwefbhrbfherfbherf'}/>
                     <Skill img={imgSkills.swagger} title={'SWAGGER'}

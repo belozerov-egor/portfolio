@@ -21,7 +21,7 @@ export const Works: FC<PropsType>= ({img,name, description }) => {
 
             </div>
             <div className={'bottomBlock'}>
-                <p>{name}</p>
+                <h3>{name}</h3>
                 <p>{description}</p>
             </div>
         </WorksBlock>
@@ -77,6 +77,12 @@ const WorksBlock = styled.div`
     flex-direction: column;
     align-items: flex-start;
     padding: 20px;
+    & h3{
+      font-size: 25px;
+      font-weight: 700;
+      line-height: 1.3;
+      margin-bottom: 10px;
+    }
   }
   
 `

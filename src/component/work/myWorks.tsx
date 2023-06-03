@@ -11,9 +11,9 @@ export const MyWorks = () => {
             <ContainerBlock className={'blockContainer'}>
                 <HeadingH2 marginBottom={'50px'} text={'МОИ РАБОТЫ'}/>
                 <div className={'worksBlock'}>
-                    <Works img={imgWorks.socialNetwork} name={'First Project'} description={'это мой первый проект бла бла бла'}/>
-                    <Works img={imgWorks.toDo} name={'Second Project'} description={'это мой второй проект бла бла бла'}/>
-                    <Works img={imgWorks.money} name={'Second Project'} description={'это мой второй проект бла бла бла'}/>
+                    <Works img={imgWorks.socialNetwork} name={'Social Network'} description={'это мой первый проект бла бла бла'}/>
+                    <Works img={imgWorks.toDo} name={'ToDo List'} description={'это мой второй проект бла бла бла'}/>
+                    <Works img={imgWorks.money} name={'My Money'} description={'это мой третий проект бла бла бла'}/>
                 </div>
             </ContainerBlock>
         </MyWorksBlock>
