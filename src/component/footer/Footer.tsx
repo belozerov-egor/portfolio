@@ -1,5 +1,10 @@
 import styled from "styled-components";
 import {ContainerBlock} from "../main/Main.tsx";
+import {HeadingH2} from "../universal/HeadingH2.tsx";
+import {SocialCard} from "./SocialCard.tsx";
+import telegram  from "../../img/telegram.svg"
+import linkedin  from "../../img/linkedin.svg"
+import whatsapp  from "../../img/whatsapp.svg"
 
 
 
@@ -7,12 +12,11 @@ export const Footer = () => {
     return (
         <FooterBlock>
             <ContainerBlock className={'blockContainer'}>
-                <h2>БЕЛОЗЕРОВ ЕГОР</h2>
+                <HeadingH2 marginBottom={'50px'} text={'БЕЛОЗЕРОВ ЕГОР'}/>
                 <div className={'socialBlock'}>
-                    <div>1</div>
-                    <div>2</div>
-                    <div>3</div>
-                    <div>4</div>
+                    <SocialCard img={telegram}/>
+                    <SocialCard img={linkedin}/>
+                    <SocialCard img={whatsapp}/>
                 </div>
                 <p>2023 все права защищены</p>
             </ContainerBlock>
@@ -21,26 +25,20 @@ export const Footer = () => {
 };
 
 const FooterBlock = styled.div`
-  padding-top: 30px;
+  padding: 30px 0;
   min-height: 150px;
-  background-color: violet;
+  background-color: #e9f9ff;
+  
     .blockContainer{
       flex-direction: column;
-      & h2 {
-        background-color: blanchedalmond;
-        margin-bottom: 50px;
-      }
       .socialBlock {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         width: 50%;
         min-height: 50px;
-        border: 1px solid blanchedalmond;
         margin-bottom: 50px;
         & div{
-          width: 90px;
-          background-color: wheat;
           display: flex;
           justify-content: center;
           align-items: center;

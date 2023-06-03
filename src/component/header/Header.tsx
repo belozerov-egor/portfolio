@@ -19,5 +19,6 @@ const HeaderBlock = styled.div`
   justify-content: flex-end;
   align-items: center;
   height: 80px;
-  background-color: rgba(91, 185, 109, 0.96);
+  padding: 0 20px;
+  background-color: #fff;;
 `

@@ -1,4 +1,54 @@
+
 * {
     margin: 0;
     box-sizing: border-box;
 }
+
+@font-face {
+    font-family: 'Karla';
+    src: url('./fonts/karla/Karla-Regular.ttf') format('truetype') ;
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Karla';
+    src: url('./fonts/karla/Karla-Bold.ttf') format('truetype') ;
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Karla';
+    src: url('./fonts/karla/Karla-ExtraBold.ttf') format('truetype') ;
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('./fonts/inter/Inter-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('./fonts/inter/Inter-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+body{
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+    background-color: #f3f9ff;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Inter', sans-serif;
+}
+a{
+    text-decoration: none;
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+}
+

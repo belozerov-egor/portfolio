@@ -1,17 +1,17 @@
 import styled from "styled-components";
 import {ContainerBlock} from "../main/Main.tsx";
+import {HeadingH2} from "../universal/HeadingH2.tsx";
 
 
 export const Contacts = () => {
     return (
         <ContactsBlock>
             <ContainerBlock className={'blockContainer'}>
-                <h2>КОНТАКТЫ </h2>
+                <HeadingH2 marginBottom={'50px'} text={'КОНТАКТЫ'}/>
                 <form action="">
                     <input type="text"/>
                     <input type="text"/>
                     <textarea >
-
                     </textarea>
                 </form>
                 <button>НАНЯТЬ МЕНЯ</button>
@@ -21,24 +21,39 @@ export const Contacts = () => {
 };
 
 const ContactsBlock = styled.div`
-  min-height: 100vh;
-  background-color: rebeccapurple;
-
+  background-color: #e9f9ff;
+  padding: 30px 0;
+  
+  
   .blockContainer {
     flex-direction: column;
-
-    & h2 {
-      background-color: blanchedalmond;
-      margin-bottom: 50px;
-    }
     & form {
+      width: 30%;
       display: flex;
       flex-direction: column;
-      margin-bottom: 50px;
+      margin-bottom: 20px;
+      & input {
+        padding: 20px;
+        width: 100%;
+        height: 60px;
+        background-color: #fff;
+        margin-bottom: 20px;
+        font-size: 18px;
+      }
+      & textarea {
+        height: 150px;
+        resize: none;
+        font-size: 18px;
+      }
     }
     & button {
-      width: 120px;
-      height: 40px;
+      width: 220px;
+      height: 60px;
+      color: #fff;
+      background-color: #130f49;
+      border: 1.5px solid #130f49;
+      border-radius: 4px;
+      padding: 9px 40px;
     }
   }
 

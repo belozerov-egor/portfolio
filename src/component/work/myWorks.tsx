@@ -1,16 +1,19 @@
 import styled from "styled-components";
 import {ContainerBlock} from "../main/Main.tsx";
 import {Works} from "./Works.tsx";
+import {HeadingH2} from "../universal/HeadingH2.tsx";
+import imgWorks from "./imgWorks.ts";
 
 
 export const MyWorks = () => {
     return (
         <MyWorksBlock>
             <ContainerBlock className={'blockContainer'}>
-                <h2>МОИ РАБОТЫ</h2>
+                <HeadingH2 marginBottom={'50px'} text={'МОИ РАБОТЫ'}/>
                 <div className={'worksBlock'}>
-                    <Works name={'First Project'} description={'это мой первый проект бла бла бла'}/>
-                    <Works name={'Second Project'} description={'это мой второй проект бла бла бла'}/>
+                    <Works img={imgWorks.socialNetwork} name={'First Project'} description={'это мой первый проект бла бла бла'}/>
+                    <Works img={imgWorks.toDo} name={'Second Project'} description={'это мой второй проект бла бла бла'}/>
+                    <Works img={imgWorks.money} name={'Second Project'} description={'это мой второй проект бла бла бла'}/>
                 </div>
             </ContainerBlock>
         </MyWorksBlock>
@@ -18,24 +21,18 @@ export const MyWorks = () => {
 };
 
 const MyWorksBlock = styled.div`
-  padding-top: 30px;
-  min-height: 100vh;
-  background-color: red;
-
+  padding: 30px 0;
+  min-height: 800px;
+  border-bottom: 1px solid rgba(30, 30, 30, .2);
   .blockContainer {
     flex-direction: column;
-
-    & h2 {
-      background-color: blanchedalmond;
-      margin-bottom: 50px;
-    }
 
     .worksBlock {
       flex-wrap: wrap;
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
+      gap: 15px;
       width: 100%;
-      border: 1px solid blanchedalmond;
     }
   }
 

@@ -5,15 +5,20 @@ import {FC} from "react";
 type PropsType = {
     name:string
     description: string
+    img: string
 }
 
-export const Works: FC<PropsType>= ({name, description }) => {
+export const Works: FC<PropsType>= ({img,name, description }) => {
     return (
         <WorksBlock>
             <div className={'topBlock'}>
-                <a href="#">
-                    Смотреть
-                </a>
+                <img src={img} alt=""/>
+                <div>
+                    <a href="#">
+                        Смотреть
+                    </a>
+                </div>
+
             </div>
             <div className={'bottomBlock'}>
                 <p>{name}</p>
@@ -30,24 +35,40 @@ const WorksBlock = styled.div`
   flex-direction: column;
   align-items: center;
   text-align: center;
-  width: 450px;
-  min-height: 250px;
+  flex-grow: 1;
+  max-width: 550px;
+  min-height: 450px;
   background-color: cadetblue;
+  
 
 
   .topBlock {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative;
     width: 100%;
-    min-height: 150px;
+    height: 70%;
     background-color: brown;
     
-    & a {
-      background-color: gold;
-      width: 90px;
-      height: 50px;
-      padding: 15px;
+    
+    & img {
+      width: 100%;
+      height: 100%;
+      
+    }
+    
+    & div {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #130f49;
+      border: 1.5px solid #130f49;
+      border-radius: 4px;
+      width: 100px;
+      height: 40px;
+      padding-top: 10px;
+      & a {
+        color: #f3f9ff;
+      }
     }
   }
   .bottomBlock {

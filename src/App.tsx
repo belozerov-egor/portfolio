@@ -6,13 +6,14 @@ import {MyWorks} from "./component/work/myWorks.tsx";
 import {DistantWork} from "./component/distantWork/DistantWork.tsx";
 import {Contacts} from "./component/contacts/Contacts.tsx";
 import {Footer} from "./component/footer/Footer.tsx";
+import styled from "styled-components";
 
 
 function App() {
 
 
     return (
-        <div>
+        <AppBlock>
             <Header/>
             <Main/>
             <Skills/>
@@ -20,8 +21,12 @@ function App() {
             <DistantWork/>
             <Contacts/>
             <Footer/>
-        </div>
+        </AppBlock>
     )
 }
 
 export default App
+
+const AppBlock = styled.div`
+
+`

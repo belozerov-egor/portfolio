@@ -1,16 +1,17 @@
 import styled from "styled-components";
-
+import photo from "../../img/2.png"
 
 export const Main = () => {
     return (
         <MainBlock>
             <ContainerBlock className={'contentBlock'}>
                 <div className={'text'}>
-                    <span>Hi there</span>
-                    <h1>I am Egor Belozerov</h1>
-                    <p>frontend developer</p>
+                    <span>Всем привет!</span>
+                    <h1>Меня зовут Белозеров Егор</h1>
+                    <p>Я frontend разработчик</p>
+
                 </div>
-                <div className={'photo'}></div>
+                <div className={'photo'}><img src={photo} alt="photo"/></div>
             </ContainerBlock>
         </MainBlock>
 
@@ -24,22 +25,22 @@ const MainBlock = styled.div`
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: #e05b2c;
-  
+  background-color: black;
+
   .text {
-    width: 300px;
-    background-color: lightgreen;
+    width: 50%;
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 80px;
+    color: white;
   }
 
-  .photo {
-    width: 300px;
-    height: 400px;
-    background-color: lightgreen;
-  }
-  .contentBlock{
+  .contentBlock {
+    justify-content: center;
     padding: 0 50px;
   }
-  
+
 `
 export const ContainerBlock = styled.div`
   display: flex;
@@ -49,5 +50,4 @@ export const ContainerBlock = styled.div`
   height: 100%;
   width: 80%;
   margin: 0 auto;
-  border: 1px solid seashell;
 `
