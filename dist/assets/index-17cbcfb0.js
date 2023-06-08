@@ -67,21 +67,55 @@ Error generating stack: `+o.message+`
   align-items: center;
   min-height: 100vh;
   background-color: black;
+  font-size: 50px;
 
+.contentBlock {
+  @media (max-width: 1150px){
+    flex-direction: column-reverse;
+    
+  }
   .text {
     width: 50%;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-weight: 800;
-    font-size: 50px;
-    line-height: 80px;
     color: white;
+    @media (max-width: 1550px) {
+      font-size: 40px;
+      width: 30%;
+    }
+    @media (max-width: 1250px) {
+      font-size: 30px;
+    }
+    @media (max-width: 1150px) {
+      width: 100%;
+    }
+    @media (max-width: 480px){
+      font-size: 20px;
+    }
+
+    h1 {
+      padding: 5px 0;
+      line-height: 80px;
+      @media (max-width: 1250px) {
+        line-height: 55px;
+      }
+      @media (max-width: 480px){
+        line-height: 35px;
+      }
+    }
   }
 
-  .contentBlock {
-    justify-content: center;
-    padding: 0 50px;
+  .photo {
+    
+    img {
+      @media (max-width: 1250px) {
+        width: 100%;
+      }
+    }
   }
 
+}
+ 
 `,Wn=Ue.div`
   display: flex;
   align-items: center;
@@ -95,8 +129,8 @@ Error generating stack: `+o.message+`
   flex-direction: column;
   align-items: center;
   text-align: center;
-  max-width: 400px;
-  min-height: 300px;
+  width: 400px;
+  height: 300px;
   padding: 0 20px 0 20px;
   border: 1px solid rgba(30, 30, 30, .2);
   border-radius: 4px;
@@ -108,6 +142,10 @@ Error generating stack: `+o.message+`
     border-radius: 4px;
 
     & img {
+      @media (max-width: 500px) {
+        width: 60px;
+        height: 60px;
+      }
       margin-bottom: 20px;
     }
 
@@ -116,21 +154,32 @@ Error generating stack: `+o.message+`
       font-weight: 700;
       line-height: 1.3;
       margin-bottom: 10px;
+      @media (max-width: 500px){
+        font-size: 20px;
+      }
     }
 
     & span {
       color: #55527c;
       font-size: 18px;
       line-height: 32px;
+      @media (max-width: 500px){
+        font-size: 15px;
     }
   }
 
 `,Ur=({text:e,...t})=>C.jsx(Cm,{marginBottom:t.marginBottom,children:e}),Cm=Ue.h2`
+  @media (max-width: 1250px) {
+    max-width: 400px;
+  }
+  @media (max-width: 480px) {
+    font-size: 30px;
+  }
   font-size: 35px;
   font-weight: 800;
   margin-bottom: ${({marginBottom:e})=>e};
     
-`,Em="https://belozerov-egor.github.io/portfolio/assets/jsIcon-c84bce4c.svg",_m="https://belozerov-egor.github.io/portfolio/assets/htmlIcon-6c1bdf60.svg",Pm="https://belozerov-egor.github.io/portfolio/assets/cssIcon-3190e6f1.svg",jm="https://belozerov-egor.github.io/portfolio/assets/reactIcon-4cd69cf8.svg",Nm="https://belozerov-egor.github.io/portfolio/assets/reduxIcon-60d14c82.svg",zm="https://belozerov-egor.github.io/portfolio/assets/tsIcon-c67394d8.svg",Tm="https://belozerov-egor.github.io/portfolio/assets/mobx-2cd1aa4c.svg",Rm="https://belozerov-egor.github.io/portfolio/assets/git-98d8f494.svg",Om="https://belozerov-egor.github.io/portfolio/assets/swagger-3cb1667b.svg",Lm="https://belozerov-egor.github.io/portfolio/assets/postman-5bf29b3b.svg",Am="https://belozerov-egor.github.io/portfolio/assets/figma-380d3824.svg",Im="https://belozerov-egor.github.io/portfolio/assets/material-ui-svgrepo-com-bc87be6d.svg",Ze={jsIcon:Em,htmlIcon:_m,cssIcon:Pm,reactIcon:jm,reduxIcon:Nm,tsIcon:zm,mobX:Tm,git:Rm,swagger:Om,postman:Lm,figma:Am,maUi:Im},$m=()=>C.jsx(Mm,{children:C.jsxs(Wn,{className:"blockContainer",children:[C.jsx(Ur,{marginBottom:"100px",text:"МОИ СКИЛЛЫ"}),C.jsxs("div",{className:"skills",children:[C.jsx(Xe,{img:Ze.jsIcon,title:"JS",description:"jdsfjsdfjsdjkfs djfhwefwefbh rbfherfbherf"}),C.jsx(Xe,{img:Ze.tsIcon,title:"TYPESCRIPT",description:"jdsfjsdfjsdjkf sdjfhwefwefb hrbfherfbherf"}),C.jsx(Xe,{img:Ze.reactIcon,title:"REACT",description:"jdsfjsdfjsdjkf sdjfhwefwef bhrbfherfbherf"}),C.jsx(Xe,{img:Ze.reduxIcon,title:"REDUX & TOOLKIT",description:"jdsfjsdfjsdjkf sdjfhwefwefbhrb fherfbherf"}),C.jsx(Xe,{img:Ze.mobX,title:"MOBX",description:"jdsfjsdfjsdjkf sdjfhwefwefb hrbfherfbherf"}),C.jsx(Xe,{img:Ze.htmlIcon,title:"HTML",description:"asdasdas dasdasdasdasdasdasd asdasdasdasdasd "}),C.jsx(Xe,{img:Ze.cssIcon,title:"CSS",description:"asdasdas dasdasdasdasdasda sdasdasdasdasdasd "}),C.jsx(Xe,{img:Ze.postman,title:"POSTMAN",description:"jdsfjsdfjsdjkf sdjfhwefwefbhrbfherfbherf"}),C.jsx(Xe,{img:Ze.swagger,title:"SWAGGER",description:"jdsfjsdfjsdjkf sdjfhwefwefbhrbfherfbherf"}),C.jsx(Xe,{img:Ze.git,title:"GIT",description:"jdsfjsdfjsdjkf sdjfhwefwefbhrbfherfbherf"}),C.jsx(Xe,{img:Ze.figma,title:"FIGMA",description:"jdsfjsdfjsdjkf sdjfhwefwefbhrbfherfbherf"}),C.jsx(Xe,{img:Ze.maUi,title:"MATERIAL UI",description:"jdsfjsdfjsdjkf sdjfhwefwefbhrbfherfbherf"})]})]})}),Mm=Ue.div`
+`,Em="https://belozerov-egor.github.io/portfolio/assets/jsIcon-c84bce4c.svg",_m="https://belozerov-egor.github.io/portfolio/assets/htmlIcon-6c1bdf60.svg",Pm="https://belozerov-egor.github.io/portfolio/assets/cssIcon-3190e6f1.svg",jm="https://belozerov-egor.github.io/portfolio/assets/reactIcon-4cd69cf8.svg",Nm="https://belozerov-egor.github.io/portfolio/assets/reduxIcon-60d14c82.svg",zm="https://belozerov-egor.github.io/portfolio/assets/tsIcon-c67394d8.svg",Tm="https://belozerov-egor.github.io/portfolio/assets/mobx-2cd1aa4c.svg",Rm="https://belozerov-egor.github.io/portfolio/assets/git-98d8f494.svg",Om="https://belozerov-egor.github.io/portfolio/assets/swagger-3cb1667b.svg",Lm="https://belozerov-egor.github.io/portfolio/assets/postman-5bf29b3b.svg",Am="https://belozerov-egor.github.io/portfolio/assets/figma-380d3824.svg",Im="https://belozerov-egor.github.io/portfolio/assets/material-ui-svgrepo-com-bc87be6d.svg",Ze={jsIcon:Em,htmlIcon:_m,cssIcon:Pm,reactIcon:jm,reduxIcon:Nm,tsIcon:zm,mobX:Tm,git:Rm,swagger:Om,postman:Lm,figma:Am,maUi:Im},$m=()=>C.jsx(Mm,{children:C.jsxs(Wn,{className:"blockContainer",children:[C.jsx(Ur,{marginBottom:"100px",text:"МОИ СКИЛЛЫ"}),C.jsxs("div",{className:"skills",children:[C.jsx(Xe,{img:Ze.jsIcon,title:"JS",description:"jdsfjsdfjsdjkfs djfhwefwefbh rbfherfbherf"}),C.jsx(Xe,{img:Ze.tsIcon,title:"TYPESCRIPT",description:"jdsfjsdfjsdjkf sdjfhwefwefb hrbfherfbherf"}),C.jsx(Xe,{img:Ze.reactIcon,title:"REACT",description:"jdsfjsdfjsdjkf sdjfhwefwef bhrbfherfbherf"}),C.jsx(Xe,{img:Ze.reduxIcon,title:"REDUX & TOOLKIT",description:"jdsfjsdfjsdjkf sdjfhwefwefbhrb fherfbherf"}),C.jsx(Xe,{img:Ze.mobX,title:"MOBX",description:"jdsfjsdfjsdjkf sdjfhwefwefb hrbfherfbherf"}),C.jsx(Xe,{img:Ze.htmlIcon,title:"HTML",description:"asdasdas dasdasdasdasdasdasd asdasdasdasdasd "}),C.jsx(Xe,{img:Ze.cssIcon,title:"CSS",description:"asdasdas dasdasda sdasdasda sdasdasda sdasdasd "}),C.jsx(Xe,{img:Ze.postman,title:"POSTMAN",description:"jdsfjsdfjsdjkf sdjfhw efwefbh rbfherfbherf"}),C.jsx(Xe,{img:Ze.swagger,title:"SWAGGER",description:"jdsfjsdfjsdjkf sdjfhwef wefbhr bfherfbherf"}),C.jsx(Xe,{img:Ze.git,title:"GIT",description:"jdsfjsdfjsdjkf sdjfhwe fwefbh rbfherfbherf"}),C.jsx(Xe,{img:Ze.figma,title:"FIGMA",description:"jdsfjsdfjsdjkf sdjfhwefw efbhrbfherfbherf"}),C.jsx(Xe,{img:Ze.maUi,title:"MATERIAL UI",description:"jdsfjsdfjsdjkf sdjfhwefwefbhr bfherfbherf"})]})]})}),Mm=Ue.div`
   padding: 30px 0;
   min-height: 800px;
   display: flex;
@@ -174,7 +223,7 @@ Error generating stack: `+o.message+`
     & img {
       width: 100%;
       height: 100%;
-      
+      object-fit: cover
     }
     
     & div {
@@ -207,7 +256,7 @@ Error generating stack: `+o.message+`
     }
   }
   
-`,Fm="https://belozerov-egor.github.io/portfolio/assets/socialnetwork-b03a370e.png",Um="https://belozerov-egor.github.io/portfolio/assets/money-1bac2a7c.jpg",Bm="https://belozerov-egor.github.io/portfolio/assets/todo-3fe236c1.png",Zo={socialNetwork:Fm,money:Um,toDo:Bm},Hm=()=>C.jsx(Vm,{children:C.jsxs(Wn,{className:"blockContainer",children:[C.jsx(Ur,{marginBottom:"50px",text:"МОИ РАБОТЫ"}),C.jsxs("div",{className:"worksBlock",children:[C.jsx(Xo,{img:Zo.socialNetwork,name:"Social Network",description:"это мой первый проект бла бла бла"}),C.jsx(Xo,{img:Zo.toDo,name:"ToDo List",description:"это мой второй проект бла бла бла"}),C.jsx(Xo,{img:Zo.money,name:"My Money",description:"это мой третий проект бла бла бла"})]})]})}),Vm=Ue.div`
+`,Fm="https://belozerov-egor.github.io/portfolio/assets/socialnetwork-b03a370e.png",Um="https://belozerov-egor.github.io/portfolio/assets/money-38b4a502.png",Bm="https://belozerov-egor.github.io/portfolio/assets/todo-3fe236c1.png",Zo={socialNetwork:Fm,money:Um,toDo:Bm},Hm=()=>C.jsx(Vm,{children:C.jsxs(Wn,{className:"blockContainer",children:[C.jsx(Ur,{marginBottom:"50px",text:"МОИ РАБОТЫ"}),C.jsxs("div",{className:"worksBlock",children:[C.jsx(Xo,{img:Zo.socialNetwork,name:"Social Network",description:"это мой первый проект бла бла бла"}),C.jsx(Xo,{img:Zo.toDo,name:"ToDo List",description:"это мой второй проект бла бла бла"}),C.jsx(Xo,{img:Zo.money,name:"My Money",description:"это мой третий проект бла бла бла"})]})]})}),Vm=Ue.div`
   padding: 30px 0;
   min-height: 800px;
   border-bottom: 1px solid rgba(30, 30, 30, .2);
@@ -228,6 +277,7 @@ Error generating stack: `+o.message+`
   justify-content: center;
   align-items: center;
   min-height: 250px;
+  padding-top: 10px;
 
   .blockContainer {
     flex-direction: column;
@@ -250,10 +300,16 @@ Error generating stack: `+o.message+`
   .blockContainer {
     flex-direction: column;
     & form {
-      width: 30%;
+      
       display: flex;
       flex-direction: column;
       margin-bottom: 20px;
+      @media (max-width: 900px) {
+        width: 70%;
+      }
+      @media (max-width: 700px) {
+        width: 90%;
+      }
       & input {
         padding: 20px;
         width: 100%;
@@ -280,7 +336,13 @@ Error generating stack: `+o.message+`
   }
 
 `,Jo=({img:e})=>C.jsx(Km,{children:C.jsx("img",{src:e,alt:""})}),Km=Ue.div`
-`,Xm="https://belozerov-egor.github.io/portfolio/assets/telegram-3ae59cc3.svg",Zm="https://belozerov-egor.github.io/portfolio/assets/linkedin-8ab5b2c5.svg",Jm="https://belozerov-egor.github.io/portfolio/assets/whatsapp-5fdf3aeb.svg",qm=()=>C.jsx(bm,{children:C.jsxs(Wn,{className:"blockContainer",children:[C.jsx(Ur,{marginBottom:"50px",text:"БЕЛОЗЕРОВ ЕГОР"}),C.jsxs("div",{className:"socialBlock",children:[C.jsx(Jo,{img:Xm}),C.jsx(Jo,{img:Zm}),C.jsx(Jo,{img:Jm})]}),C.jsx("p",{children:"2023 все права защищены"})]})}),bm=Ue.div`
+ img {
+   @media (max-width: 500px){
+     width: 40px;
+     height: 40px;
+   }
+ }
+`,Xm="https://belozerov-egor.github.io/portfolio/assets/telegram-1a7fca4c.svg",Zm="https://belozerov-egor.github.io/portfolio/assets/linkedin-8ab5b2c5.svg",Jm="https://belozerov-egor.github.io/portfolio/assets/whatsapp-5fdf3aeb.svg",qm=()=>C.jsx(bm,{children:C.jsxs(Wn,{className:"blockContainer",children:[C.jsx(Ur,{marginBottom:"50px",text:"БЕЛОЗЕРОВ ЕГОР"}),C.jsxs("div",{className:"socialBlock",children:[C.jsx(Jo,{img:Xm}),C.jsx(Jo,{img:Zm}),C.jsx(Jo,{img:Jm})]}),C.jsx("p",{children:"2023 все права защищены"})]})}),bm=Ue.div`
   padding: 30px 0;
   min-height: 150px;
   background-color: #e9f9ff;
