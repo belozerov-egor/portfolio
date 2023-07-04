@@ -15,5 +15,11 @@ export const SocialCard: FC<PropsType> = ({img}) => {
 
 
 const SocialCardStyle = styled.div`
+ img {
+   @media (max-width: 500px){
+     width: 40px;
+     height: 40px;
+   }
+ }
 `
 

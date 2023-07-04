@@ -10,6 +10,10 @@ import swagger from "../../img/swagger.svg"
 import postman from "../../img/postman.svg"
 import figma from "../../img/figma.svg"
 import maUi from "../../img/material-ui-svgrepo-com.svg"
+import vue from "../../img/vue.svg"
+import sass from "../../img/sass.svg"
+import test from "../../img/test.svg"
+import storybook from "../../img/storybook.svg"
 
 export default {
     jsIcon,
@@ -23,5 +27,9 @@ export default {
     swagger,
     postman,
     figma,
-    maUi
+    maUi,
+    storybook,
+    vue,
+    test,
+    sass
 }

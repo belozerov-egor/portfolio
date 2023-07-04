@@ -28,10 +28,16 @@ const ContactsBlock = styled.div`
   .blockContainer {
     flex-direction: column;
     & form {
-      width: 30%;
+      
       display: flex;
       flex-direction: column;
       margin-bottom: 20px;
+      @media (max-width: 900px) {
+        width: 70%;
+      }
+      @media (max-width: 700px) {
+        width: 90%;
+      }
       & input {
         padding: 20px;
         width: 100%;

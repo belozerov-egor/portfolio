@@ -37,8 +37,9 @@ const WorksBlock = styled.div`
   text-align: center;
   flex-grow: 1;
   max-width: 550px;
-  min-height: 450px;
+  height: 680px;
   background-color: cadetblue;
+  border: 1px solid rgba(30, 30, 30, .2);
   
 
 
@@ -46,13 +47,13 @@ const WorksBlock = styled.div`
     position: relative;
     width: 100%;
     height: 70%;
-    background-color: brown;
+    background-color: white;
     
     
     & img {
       width: 100%;
       height: 100%;
-      
+      object-fit: cover
     }
     
     & div {
@@ -75,13 +76,18 @@ const WorksBlock = styled.div`
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     padding: 20px;
     & h3{
       font-size: 25px;
       font-weight: 700;
       line-height: 1.3;
       margin-bottom: 10px;
+    }
+    & p {
+      max-width: 60%;
+      font-size: 20px;
+      
     }
   }
   

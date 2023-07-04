@@ -18,6 +18,12 @@ type PropsStyleType = {
 }
 
 const HeadingSk = styled.h2<PropsStyleType>`
+  @media (max-width: 1250px) {
+    max-width: 400px;
+  }
+  @media (max-width: 480px) {
+    font-size: 30px;
+  }
   font-size: 35px;
   font-weight: 800;
   margin-bottom: ${({marginBottom})=>marginBottom};

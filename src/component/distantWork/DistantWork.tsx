@@ -19,6 +19,7 @@ const DistantWorkBlock = styled.div`
   justify-content: center;
   align-items: center;
   min-height: 250px;
+  padding-top: 10px;
 
   .blockContainer {
     flex-direction: column;
